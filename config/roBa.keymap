@@ -80,13 +80,13 @@
 
         default_layer {
             bindings = <
-&mt LEFT_ALT Q             &kp W   &kp E         &kp R       &kp T                                               &kp Y        &kp U  &lt 4 I                 &kp O    &mt RIGHT_ALT P
-&mt LCTRL A                &kp S   &kp D         &kp F       &kp G        &kp LS(LG(S))           &trans         &kp H        &kp J  &kp K                   &kp L    &mt RCTRL SEMICOLON
-&mt LEFT_SHIFT LEFT_SHIFT  &kp X   &kp C         &kp V       &kp B        &lt_to_layer_0 5 A      &trans         &kp N        &kp M  &lt_to_layer_0 4 COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&trans                     &trans  &kp LEFT_WIN  &kp ESCAPE  &lt 2 SPACE  &kp TAB                 &kp BACKSPACE  &lt 1 ENTER                                          &trans
+&mt LEFT_ALT Q    &kp W   &kp E         &kp R       &kp T                                               &kp Y        &kp U  &lt 5 I                 &kp O    &mt RIGHT_ALT P
+&mt LCTRL A       &kp S   &kp D         &kp F       &kp G        &kp LS(LG(S))           &trans         &kp H        &kp J  &kp K                   &kp L    &mt RCTRL SEMICOLON
+&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V       &kp B        &lt_to_layer_0 0 A      &trans         &kp N        &kp M  &lt_to_layer_0 5 COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&trans            &trans  &kp LEFT_WIN  &kp ESCAPE  &lt 2 SPACE  &kp TAB                 &kp BACKSPACE  &lt 1 ENTER                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         FUNCTION {
@@ -101,9 +101,18 @@
         NUM {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN        &kp POUND  &kp DOLLAR  &kp PERCENT                      &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LCTRL        &kp COMMA          &mkp LCLK  &mkp RCLK   &kp TILDE    &trans      &trans  &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp NON_US_BACKSLASH
+&kp LCTRL        &kp SINGLE_QUOTE   &mkp LCLK  &mkp RCLK   &kp TILDE    &trans      &trans  &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp NON_US_BACKSLASH
 &kp LEFT_SHIFT   &kp DOUBLE_QUOTES  &mkp MCLK  &trans      &kp GRAVE    &trans      &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp PIPE
 &trans           &trans             &trans     &trans      &trans       &trans      &trans  &trans                                                                 &trans
+            >;
+        };
+
+        DUMMY {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
